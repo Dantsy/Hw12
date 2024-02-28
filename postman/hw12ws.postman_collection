@@ -1,0 +1,135 @@
+{
+  "info": {
+    "_postman_id": "914378f0-d197-4bea-adff-29612c93318b",
+    "name": "hw12ws",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "29616697"
+  },
+  "item": [
+    {
+      "name": "get cash",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "pinCode",
+              "value": "1234"
+            },
+            {
+              "key": "amount",
+              "value": "7000"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:8080/getCash",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "getCash"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "deposit cash",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "pinCode",
+              "value": "1234"
+            },
+            {
+              "key": "denomination",
+              "value": "5000"
+            },
+            {
+              "key": "amount",
+              "value": "5"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:8080/depositCash",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "depositCash"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "check balance",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/getBalance?pinCode=1234",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "getBalance"
+          ],
+          "query": [
+            {
+              "key": "pinCode",
+              "value": "1234"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "change pin",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "pinCode",
+              "value": "1234"
+            },
+            {
+              "key": "newPinCode",
+              "value": "1235"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:8080/changePin",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "changePin"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
